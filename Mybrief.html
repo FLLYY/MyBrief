@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative; /* 添加相对定位 */
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        section#showcase h1 {
+            margin-top: 0;
+            font-size: 55px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            position: relative; /* 确保 .content 的子元素可以进行绝对定位 */
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left-align, .right-align {
+            flex: 1;
+            text-align: left;
+        }
+        .right-align {
+            margin-left: 20px;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .avatar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff; /* 添加边框以突出显示头像 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        section#showcase {
+            min-height: 400px;
+            background-image: url('image/微信图片_20240726203428.jpg'); /* 替换成您的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        section#showcase h1 {
+            margin-top: 0;
+            font-size: 55px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>彭飞</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">个人简介</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#skill">专业技能</a> </li>
+                <li><a href="#projects">项目作品</a></li>
+                <li><a href="#contact">获奖信息</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="showcase">
+    <div class="container" >
+        <h1>欢迎来到我的个人简历</h1>
+        <p>一个25届毕业的软件工程专业的大学生</p>
+    </div>
+</section>
+
+<div class="container">
+    <section id="about" class="content">
+        <h2>个人简介</h2>
+        <div class="avatar">
+            <img src="image/证件照_白底.jpg" alt="头像">
+        </div>
+        <div class="row">
+            <p class="left-align">电话：19918336389</p>
+            <p class="right-align">现所在地：广东惠州</p>
+        </div>
+        <div class="row">
+            <p class="left-align">博客: <a href="http://112.124.38.161:8000/" target="_blank" class="underline">Pflearn</a></p>
+            <p class="right-align">抖音: <a href="https://www.douyin.com/search/%E5%B0%8F%E9%A3%9E%E5%AD%A6%E7%BC%96%E7%A8%8B?aid=957c2a4b-089a-4576-8c07-35c748a06cd9&type=general" target="_blank" class="underline">小飞学编程</a></p>
+        </div>
+        <div class="row">
+            <p class="left-align">邮箱：2813341861@qq.com</p>
+            <p class="right-align">GitHub: <a href="https://github.com/FLLYY" target="_blank" class="underline">FLLYY</a></p>
+        </div>
+        <div class="row">
+            <p class="left-align">求职意向：后端开发，项目助理</p>
+            <p class="right-align">意向工作地点：深圳，惠州</p>
+        </div>
+    </section>
+
+
+    <section id="education" class="content">
+        <h2>教育背景</h2>
+        <div class="row">
+            <p class="left-align">2021.09-2025.06</p>
+            <p class="right-align"> 湖南理工学院（湖南省统招一本）|软件工程|本科</p>
+        </div>
+    </section>
+
+    <section id="skill" class="content">
+        <h2>专业技能</h2>
+        <div class="skills-content">
+            <ul>
+                <li><strong>编程语言：</strong> 精通使用C、Java等编程语言。</li>
+                <li><strong>开发框架：</strong> 精通Spring、SpringMVC、MyBatis、SpringBoot、SpringSecurity等主流开发框架。</li>
+                <li><strong>数据库：</strong> 精通MySQL、SQLServer等主流关系数据库，熟悉Redis、RabbitMQ等中间件。</li>
+                <li><strong>前端技术：</strong> 精通HTML、CSS、JavaScript、JQuery、Element-ui、Vue3、React。</li>
+                <li><strong>服务器：</strong>熟悉Linux系统、Docker容器、Nginx，熟悉TCP/IP协议以及互联网常见应用和协议的原理。</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="projects" class="content">
+        <h2>项目作品</h2>
+        <div class="project-header">
+            <div class="row">
+                <p class="left-align"><strong>2024-03至2024-06</strong></p>
+                <p class="right-align"> <a href="http://112.124.38.161:8000" target="_blank" class="underline">个人博客</a></p>
+            </div>
+        </div>
+        <div class="project-content">
+            <p><strong>项目描述：</strong></p>
+            <p>项目的技术栈包括Spring、SpringMVC、MyBatis、MySQL、Thymeleaf、jQuery、JavaScript、Ajax、JSON和PageHelper、docker、linux。</p>
+            <p>实现了前后端分离、文件上传下载、博客标签管理、用户登录注册功能、资源的动静分离管理。现已完成部署。</p>
+
+            <p><strong>责任描述：</strong></p>
+            <p>功能完整，根据实际需求，添加和优化了一些功能模块，用户管理、文件上传下载和优化管理、文章审核资源分离和评论功能等。</p>
+
+            <p><strong>功能特色：</strong></p>
+            <ul>
+                <li>文件上传下载：使用java.io.File文件流实现文件的CRUD。</li>
+                <li>权限管理AOP切面编程：利用Spring的注解和AOP切面编程功能，实现了用户权限验证和日志记录功能。</li>
+                <li>前后端交互：使用Ajax和JSON实现前后端数据交互,使用SwaggerAPI接口进行测试。</li>
+                <li>分页处理：使用MyBatis提供的PageHelper插件，在后台实现数据的分页展示。</li>
+                <li>项目部署：使用阿里云linux服务器，Docker容器，安装部署，对项目进行部署和维护。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>校内荣誉</h2>
+        <div class="honors-content">
+            <ul>
+                <li><strong>2023-06：</strong> 薮学建模竞赛校等奖</li>
+                <li><strong>2023-04：</strong> 十四届蓝桥杯（湖南赛区）省三等奖</li>
+                <li><strong>2022-09：</strong> 校级三好学生标兵（专业第一）</li>
+                <li><strong>2022-09：</strong> 国家励志奖学金</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>个人简历 &copy; 2024</p>
+</footer>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
